@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Register - {{ info.name }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Registration</h1>
+        <p>Join {{ info.name }} and showcase your innovation</p>
+    </div>
+</section>
+
+<!-- Registration Section -->
+<section class="register-section">
+    <div class="container">
+        <div class="register-container">
+            <div class="register-header">
+                <h2>Register for {{ info.name }}</h2>
+                <p>Choose your participant type and complete the registration form</p>
+            </div>
+
+            <div class="registration-info">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Registration Information</h3>
+                    <p>Please select your participant type below. Both internal and external participants will use the same registration form. Make sure to fill in all required details accurately.</p>
+                </div>
+            </div>
+
+            <div class="registration-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDyvaewo_FLfDrdxnz2-9QVtO910cWTPwzwE0HVAH51K4xvQ/viewform" target="_blank" class="reg-button internal-reg">
+                    <i class="fas fa-building"></i>
+                    <span>Register as Internal Participant</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDyvaewo_FLfDrdxnz2-9QVtO910cWTPwzwE0HVAH51K4xvQ/viewform" target="_blank" class="reg-button external-reg">
+                    <i class="fas fa-globe"></i>
+                    <span>Register as External Participant</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="registration-note">
+                <div class="note-card">
+                    <i class="fas fa-users"></i>
+                    <div>
+                        <h3>Team Requirements</h3>
+                        <p>Teams must consist of a minimum of 5 members and a maximum of 6 members. Make sure all team members register individually through the form.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+

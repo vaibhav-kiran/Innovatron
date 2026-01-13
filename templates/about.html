@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block title %}About - {{ info.name }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>About {{ info.name }}</h1>
+        <p>Learn more about our hackathon</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Welcome to {{ info.name }}</h2>
+                <p>
+                    {{ info.name }} is a premier Design & Deploy hackathon organized by the 
+                    <strong>Mechanical Engineering Division</strong> at 
+                    <strong>Karunya Institute of Technology and Sciences</strong>. This event brings together 
+                    creative minds, innovative thinkers, and passionate developers from across 
+                    the region. This 3-day intensive event challenges participants to design, 
+                    develop, and deploy innovative solutions to real-world problems.
+                </p>
+                <p>
+                    <strong>Primary Concept:</strong> Teams are required to design or demonstrate a product 
+                    that is both feasible and innovative. The focus is on creating practical solutions that 
+                    can be realistically implemented, showcasing creativity alongside technical viability.
+                </p>
+                <p>
+                    Whether you're a seasoned developer, a design enthusiast, or someone just 
+                    starting their journey in tech, {{ info.name }} provides the perfect platform 
+                    to showcase your skills, learn from experts, and collaborate with talented 
+                    individuals.
+                </p>
+                <p>
+                    <strong>Venue:</strong> {{ info.location }}<br>
+                    <strong>Address:</strong> {{ info.address }}
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/mech.png') }}" alt="Mechanical Engineering Division">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What to Expect -->
+<section class="expect-section">
+    <div class="container">
+        <h2 class="section-title">What to Expect</h2>
+        <div class="expect-grid">
+            <div class="expect-card">
+                <div class="expect-number">01</div>
+                <h3>Opening Ceremony</h3>
+                <p>Kick off the hackathon with inspiring talks, team formation, and problem statement reveals.</p>
+            </div>
+            <div class="expect-card">
+                <div class="expect-number">02</div>
+                <h3>48 Hours of Hacking</h3>
+                <p>Intensive coding and design sessions with mentorship support and workshops throughout.</p>
+            </div>
+            <div class="expect-card">
+                <div class="expect-number">03</div>
+                <h3>Project Showcase</h3>
+                <p>Present your projects to judges and peers. Get feedback and recognition for your work.</p>
+            </div>
+            <div class="expect-card">
+                <div class="expect-number">04</div>
+                <h3>Awards & Closing</h3>
+                <p>Celebrate winners, network with participants, and close with memorable moments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners-section">
+    <div class="container">
+        <h2 class="section-title">In Collaboration With</h2>
+        <p class="partners-subtitle">Our Industrial Partners</p>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="{{ url_for('static', filename='images/autodesk.jpg') }}" alt="Autodesk Logo">
+                </div>
+                <h3>Autodesk</h3>
+                <p>
+                    Autodesk, Inc. is a leading American multinational software corporation that provides 
+                    software products and services for the architecture, engineering, construction, manufacturing, 
+                    media, education, and entertainment industries. Founded in 1982, Autodesk's flagship product 
+                    AutoCAD is widely used by professionals worldwide for computer-aided design (CAD) and drafting.
+                </p>
+                <a href="https://www.autodesk.com" target="_blank" class="partner-link">
+                    Learn More <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="{{ url_for('static', filename='images/usam.png') }}" alt="USAM CADSOFT Logo">
+                </div>
+                <h3>USAM CADSOFT</h3>
+                <p>
+                    USAM CADSOFT is a prominent provider of CAD solutions, offering a comprehensive range of 
+                    software and services tailored to meet the needs of design and engineering professionals. 
+                    With expertise in CAD software and engineering solutions, USAM CADSOFT supports innovation 
+                    and excellence in design and manufacturing industries.
+                </p>
+                <a href="https://www.usamcadsoft.com" target="_blank" class="partner-link">
+                    Learn More <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Instructions Section -->
+<section class="instructions-section">
+    <div class="container">
+        <h2 class="section-title">Important Instructions</h2>
+        <div class="instructions-grid">
+            <div class="instruction-card">
+                <div class="instruction-number">1</div>
+                <h3>Arrival Time</h3>
+                <p>Participants are required to arrive at the venue by 8:30 AM on January 28, 2026, at the latest.</p>
+            </div>
+            <div class="instruction-card">
+                <div class="instruction-number">2</div>
+                <h3>Equipment & Software</h3>
+                <p>Participants are expected to bring their own laptops and required software. Design software such as Autodesk Fusion 360, AutoCAD, and similar tools can be used.</p>
+            </div>
+            <div class="instruction-card">
+                <div class="instruction-number">3</div>
+                <h3>Food & Accommodation</h3>
+                <p>Food and stay facilities must be arranged by participants themselves. Meals can be obtained from the canteen, and recommended lodgings are available nearby.</p>
+            </div>
+            <div class="instruction-card">
+                <div class="instruction-number">4</div>
+                <h3>Personal Belongings</h3>
+                <p>Participants are responsible for the security and safety of their personal belongings throughout the event.</p>
+            </div>
+            <div class="instruction-card">
+                <div class="instruction-number">5</div>
+                <h3>Team Composition</h3>
+                <p>Teams must consist of a minimum of 5 members and a maximum of 6 members per team.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="300">0</div>
+                <div class="stat-label">Expected Participants</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="72">0</div>
+                <div class="stat-label">Hours of Designing</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-special">5-6 Members</div>
+                <div class="stat-label">Per Team (Min: 5, Max: 6)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-special">₹45,000</div>
+                <div class="stat-label">Prizepool (TOP 3)</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Animate stats on scroll
+    const animateStats = () => {
+        const stats = document.querySelectorAll('.stat-number');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    let current = 0;
+                    const increment = target / 50;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            entry.target.textContent = target;
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current);
+                        }
+                    }, 30);
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        stats.forEach(stat => observer.observe(stat));
+    };
+    animateStats();
+</script>
+{% endblock %}
+

@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block title %}Home - {{ info.name }}{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background" style="background-image: url('{{ url_for('static', filename='images/mech.png') }}');">
+        <div class="hero-overlay"></div>
+        <div class="particles"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="{{ url_for('static', filename='images/innovatron-logo.svg') }}" alt="{{ info.name }} Logo">
+            </div>
+            <div class="hero-badge">
+                <i class="fas fa-calendar-alt"></i>
+                <span>{{ info.dates }}</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="gradient-text">{{ info.name }}</span>
+            </h1>
+            <p class="hero-tagline">{{ info.tagline }}</p>
+            <p class="hero-subtitle">{{ info.type }}</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('register') }}" class="btn btn-primary">
+                    <span>Register Now</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="{{ url_for('about') }}" class="btn btn-secondary">
+                    <span>Learn More</span>
+                    <i class="fas fa-info-circle"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Countdown Timer Section -->
+<section class="countdown-section">
+    <div class="container">
+        <div class="countdown-card">
+            <h2>Problem Statement Release</h2>
+            <p class="countdown-subtitle">The problem statement will be released on January 22, 2026</p>
+            <div class="countdown-timer" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section class="quote-section">
+    <div class="container">
+        <div class="quote-card">
+            <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <blockquote class="quote-text">
+                {{ info.quote }}
+            </blockquote>
+            <cite class="quote-author">— {{ info.quote_author }}</cite>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <h2 class="section-title">Why Participate?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovate</h3>
+                <p>Bring your creative ideas to life and solve real-world problems with innovative solutions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Design & Deploy</h3>
+                <p>Showcase your skills in both design and development. Build something amazing from scratch.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Network</h3>
+                <p>Connect with like-minded individuals, mentors, and industry professionals.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Compete</h3>
+                <p>Win exciting prizes and recognition for your outstanding projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Gallery Section -->
+<section class="gallery-section">
+    <div class="container">
+        <h2 class="section-title">Hackathon Highlights</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Hackathon Designing">
+                <div class="gallery-overlay">
+                    <h3>Designing Sessions</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="Team Collaboration">
+                <div class="gallery-overlay">
+                    <h3>Team Collaboration</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" alt="Innovation">
+                <div class="gallery-overlay">
+                    <h3>Innovation</h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=600&fit=crop" alt="Networking">
+                <div class="gallery-overlay">
+                    <h3>Networking</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section class="partners-section">
+    <div class="container">
+        <h2 class="section-title">In Collaboration With</h2>
+        <p class="partners-subtitle">Our Industrial Partners</p>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="{{ url_for('static', filename='images/autodesk.jpg') }}" alt="Autodesk Logo">
+                </div>
+                <h3>Autodesk</h3>
+                <p>
+                    A leading software corporation providing solutions for architecture, engineering, 
+                    construction, manufacturing, and entertainment industries.
+                </p>
+            </div>
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="{{ url_for('static', filename='images/usam.png') }}" alt="USAM CADSOFT Logo">
+                </div>
+                <h3>USAM CADSOFT</h3>
+                <p>
+                    A prominent provider of CAD solutions, offering comprehensive software and services 
+                    for design and engineering professionals.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Innovate?</h2>
+            <p>Join us for an exciting 3-day hackathon and turn your ideas into reality!</p>
+            <a href="{{ url_for('register') }}" class="btn btn-primary btn-large">
+                <span>Register Now</span>
+                <i class="fas fa-rocket"></i>
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Smooth scroll for scroll indicator
+    document.querySelector('.scroll-indicator').addEventListener('click', () => {
+        document.querySelector('.features-section').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Countdown Timer
+    const countdownDate = new Date('January 22, 2026 00:00:00').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        if (distance < 0) {
+            document.getElementById('days').textContent = '00';
+            document.getElementById('hours').textContent = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
+{% endblock %}
+

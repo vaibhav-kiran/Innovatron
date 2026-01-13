@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block title %}Schedule - {{ info.name }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Event Schedule</h1>
+        <p>{{ info.dates }}</p>
+    </div>
+</section>
+
+<!-- Schedule Section -->
+<section class="schedule-section">
+    <div class="container">
+        <div class="schedule-timeline">
+            <!-- Day 1 -->
+            <div class="timeline-day">
+                <div class="day-header">
+                    <h2>Day 1 - January 28, 2026</h2>
+                    <span class="day-badge">Opening Day</span>
+                </div>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:30 AM</div>
+                        <div class="timeline-content">
+                            <h3>Registration & Check-in</h3>
+                            <p>Participants are required to arrive by 8:30 AM. Check-in and networking session.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Opening Ceremony</h3>
+                            <p>Welcome address, keynote speakers, and hackathon overview</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">11:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Problem Statement Reveal</h3>
+                            <p>Challenge themes and problem statements announced</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">12:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Team Formation</h3>
+                            <p>Form teams (5-6 members), brainstorm ideas, and plan your approach</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">01:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Networking break with mentors and participants</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">02:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Designing Begins!</h3>
+                            <p>Start designing and developing your solutions</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Evening break and continued designing</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Midnight Refreshments</h3>
+                            <p>Late-night refreshments provided to keep you energized</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="timeline-day">
+                <div class="day-header">
+                    <h2>Day 2 - January 29, 2026</h2>
+                    <span class="day-badge">Hacking Continues</span>
+                </div>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Morning break to start your day</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Workshop Session 1</h3>
+                            <p>Design thinking and UI/UX best practices</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">12:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Midday break and networking</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">02:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Workshop Session 2</h3>
+                            <p>Deployment strategies and cloud technologies</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">04:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Mentor Check-ins</h3>
+                            <p>Get feedback and guidance from industry mentors</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Evening break</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Mid-Point Presentations</h3>
+                            <p>Share your progress and get peer feedback</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="timeline-day">
+                <div class="day-header">
+                    <h2>Day 3 - January 30, 2026</h2>
+                    <span class="day-badge">Final Day</span>
+                </div>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-time">08:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Final day morning break</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">10:00 AM</div>
+                        <div class="timeline-content">
+                            <h3>Final Push</h3>
+                            <p>Last hours to polish and deploy your projects</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">12:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Submission Deadline</h3>
+                            <p>All projects must be submitted by this time</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">01:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Break</h3>
+                            <p>Post-submission break</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">02:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Project Showcase</h3>
+                            <p>Teams present their projects to judges and attendees</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">05:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Judging & Evaluation</h3>
+                            <p>Judges review projects and select winners</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">06:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Awards Ceremony</h3>
+                            <p>Celebrate winners and recognize outstanding projects</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-time">07:00 PM</div>
+                        <div class="timeline-content">
+                            <h3>Closing Ceremony</h3>
+                            <p>Final remarks, networking, and farewell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

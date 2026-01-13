@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - {{ info.name }}{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the {{ info.name }} team</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Let's Connect</h2>
+                <p>Have questions? We're here to help! Reach out to us through any of the channels below.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Alwin Rithick Raaj</h3>
+                            <a href="tel:+916380354004">+91 63803 54004</a>
+                            <a href="https://wa.me/916380354004" target="_blank" style="display: block; margin-top: 0.5rem;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="mailto:alwinrithick@karunya.edu.in" style="display: block; margin-top: 0.5rem;">
+                                <i class="fas fa-envelope"></i> alwinrithick@karunya.edu.in
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Surya</h3>
+                            <a href="tel:+918248188509">+91 82481 88509</a>
+                            <a href="https://wa.me/918248188509" target="_blank" style="display: block; margin-top: 0.5rem;">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Nitin Maran M</h3>
+                            <a href="mailto:nitinmaran@karunya.edu.in">nitinmaran@karunya.edu.in</a>
+                            <p>Email us for inquiries and we'll respond within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Location</h3>
+                            <p>{{ info.location }}<br>{{ info.address }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                    <h2>Send us a Message</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i>
+                            Your Name
+                        </label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            Your Email
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="fas fa-comment"></i>
+                            Message
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6"
+                            placeholder="Enter your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="map-section">
+    <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <div class="location-wrapper">
+            <div class="location-image">
+                <img src="{{ url_for('static', filename='images/mech.png') }}" alt="Mechanical Engineering Division">
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d76.7431!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb1%3A0x894f58aad85a1e9f!2sKarunya%20Institute%20of%20Technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
