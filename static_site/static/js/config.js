@@ -3,7 +3,7 @@
 
 const FIREBASE_CONFIG = {
     // Replace 'your-project-id' with your actual Firebase project ID
-    projectId: 'your-project-id',
+    projectId: 'innovatron-2503b',
     
     // Function region (usually 'us-central1')
     functionRegion: 'us-central1',
