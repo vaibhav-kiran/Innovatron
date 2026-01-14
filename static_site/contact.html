@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Innovatron 26</title>
+    <link rel="icon" type="image/svg+xml" href="static/images/innovatron-logo-icon.svg">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="static/js/config.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="static/images/innovatron-logo.svg" alt="Innovatron 26 Logo" class="logo-img">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>
+                    <li><a href="location.html" class="nav-link">Location</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with the Innovatron 26 team</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <p>Have questions? We're here to help! Reach out to us through any of the channels below.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Alwin Rithick Raaj</h3>
+                                    <a href="tel:+916380354004">+91 63803 54004</a>
+                                    <a href="https://wa.me/916380354004" target="_blank" style="display: block; margin-top: 0.5rem;">
+                                        <i class="fab fa-whatsapp"></i> WhatsApp
+                                    </a>
+                                    <a href="mailto:alwinrithick@karunya.edu.in" style="display: block; margin-top: 0.5rem;">
+                                        <i class="fas fa-envelope"></i> alwinrithick@karunya.edu.in
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Surya</h3>
+                                    <a href="tel:+918248188509">+91 82481 88509</a>
+                                    <a href="https://wa.me/918248188509" target="_blank" style="display: block; margin-top: 0.5rem;">
+                                        <i class="fab fa-whatsapp"></i> WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Nitin Maran M</h3>
+                                    <a href="mailto:nitinmaran@karunya.edu.in">nitinmaran@karunya.edu.in</a>
+                                    <p>Email us for inquiries and we'll respond within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Location</h3>
+                                    <p>Mechanical Engineering Division, Karunya Institute of Technology and Sciences<br>Karunya Nagar, Coimbatore, Tamil Nadu 641114, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <h2>Send us a Message</h2>
+                            
+                            <!-- Flash Messages -->
+                            <div id="formMessages" style="display: none; margin-bottom: 1.5rem;"></div>
+                            
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i>
+                                    Your Name
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i>
+                                    Your Email
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="Enter your email"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i>
+                                    Message
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="6"
+                                    placeholder="Enter your message here..."
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Find Us</h2>
+                <div class="location-wrapper">
+                    <div class="location-image">
+                        <img src="static/images/mech.png" alt="Mechanical Engineering Division">
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.5!2d76.7431!3d11.0168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb1%3A0x894f58aad85a1e9f!2sKarunya%20Institute%20of%20Technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1234567890" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="static/images/innovatron-logo.svg" alt="Innovatron 26 Logo" class="footer-logo">
+                    <p>Design. Deploy. Innovate.</p>
+                    <p class="dates">January 28-30, 2026</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="mailto:nitinmaran@karunya.edu.in"><i class="fas fa-envelope"></i> Nitin Maran M</a></li>
+                        <li><a href="mailto:alwinrithick@karunya.edu.in"><i class="fas fa-envelope"></i> Alwin Rithick Raaj</a></li>
+                        <li><a href="tel:+916380354004"><i class="fas fa-phone"></i> +91 63803 54004</a></li>
+                        <li><a href="tel:+918248188509"><i class="fas fa-phone"></i> +91 82481 88509</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Innovatron 26. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/main.js"></script>
+    <script>
+        // Contact form submission handler
+        (function() {
+            const form = document.getElementById('contactForm');
+            const formMessages = document.getElementById('formMessages');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Get the Cloud Function URL from config.js
+            // Update static/js/config.js with your Firebase project ID
+            // OR use Formspree (no backend needed) - see alternative below
+            
+            function showMessage(message, type) {
+                formMessages.style.display = 'block';
+                formMessages.className = `flash-message flash-${type}`;
+                formMessages.innerHTML = `
+                    <span>${message}</span>
+                    <button class="close-flash" onclick="this.parentElement.style.display='none'">&times;</button>
+                `;
+                
+                // Scroll to message
+                formMessages.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                
+                // Auto-hide after 5 seconds
+                setTimeout(() => {
+                    formMessages.style.display = 'none';
+                }, 5000);
+            }
+            
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                // Disable submit button
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+                
+                try {
+                    // Option 1: Use Firebase Cloud Function (requires setup)
+                    // Uncomment below and comment out Option 2 if using Cloud Functions
+                    /*
+                    const response = await fetch(FUNCTION_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ name, email, message })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok && data.success) {
+                        showMessage(data.message || 'Thank you for your message! We will get back to you soon.', 'success');
+                        form.reset();
+                    } else {
+                        showMessage(data.error || 'There was an error sending your message. Please try again.', 'error');
+                    }
+                    */
+                    
+                    // Option 2: Use Formspree (NO BACKEND NEEDED - works immediately!)
+                    // Get your form ID from https://formspree.io (free, no signup needed for basic)
+                    // Replace 'YOUR_FORM_ID' with your Formspree form ID
+                    const FORMSPREE_URL = 'https://formspree.io/f/YOUR_FORM_ID';
+                    
+                    const response = await fetch(FORMSPREE_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ 
+                            name: name,
+                            email: email,
+                            message: message,
+                            _subject: `New Contact Form Message from ${name} - Innovatron 26`
+                        })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        showMessage('Thank you for your message! We will get back to you soon.', 'success');
+                        form.reset();
+                    } else {
+                        showMessage('There was an error sending your message. Please try again.', 'error');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    showMessage('There was an error sending your message. Please try again or contact us directly.', 'error');
+                } finally {
+                    // Re-enable submit button
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<svg width="220" height="50" viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Rocket with circuit lines -->
+  <g transform="translate(3, 3)">
+    <!-- Rocket body -->
+    <path d="M 12 28 L 12 16 L 16 12 L 20 16 L 20 28 Z" fill="url(#iconGradient)" />
+    <!-- Rocket tip -->
+    <path d="M 16 12 L 14 8 L 16 6 L 18 8 Z" fill="#ec4899" />
+    <!-- Rocket fins -->
+    <path d="M 12 28 L 8 32 L 10 30 Z" fill="url(#iconGradient)" opacity="0.8" />
+    <path d="M 20 28 L 24 32 L 22 30 Z" fill="url(#iconGradient)" opacity="0.8" />
+    <!-- Circuit lines -->
+    <path d="M 3 20 L 12 20" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <path d="M 20 20 L 29 20" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <path d="M 3 24 L 12 24" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <path d="M 20 24 L 29 24" stroke="url(#iconGradient)" stroke-width="1.5" fill="none" />
+    <!-- Small nodes -->
+    <circle cx="3" cy="20" r="1.5" fill="#6366f1" />
+    <circle cx="29" cy="20" r="1.5" fill="#6366f1" />
+    <circle cx="3" cy="24" r="1.5" fill="#8b5cf6" />
+    <circle cx="29" cy="24" r="1.5" fill="#8b5cf6" />
+  </g>
+  
+  <!-- Text: INNOVATRON -->
+  <text x="40" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="url(#logoGradient)">
+    INNOVATRON
+  </text>
+  
+  <!-- Accent line -->
+  <line x1="40" y1="35" x2="200" y2="35" stroke="url(#logoGradient)" stroke-width="1.5" />
+  
+  <!-- Year badge -->
+  <circle cx="195" cy="12" r="6" fill="url(#iconGradient)" />
+  <text x="195" y="15" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">26</text>
+</svg>
+
